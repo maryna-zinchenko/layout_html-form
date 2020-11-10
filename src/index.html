@@ -61,6 +61,7 @@
         <p class="inputs">
           <label for="email">E-mail:</label>
           <input
+            required
             type="email"
             id="email"
             name="email"
@@ -70,9 +71,11 @@
         <p class="last">
           <label for="pass">Password:</label>
           <input
+            required
             type="password"
             name="pass"
-            id="pass">
+            id="pass"
+            minlength="8">
         </p>
       </fieldset>
 
@@ -165,7 +168,7 @@
           </select>
         </p>
       </fieldset>
-      <button type="submit">Submit</button>
+      <button onsubmit="onSubmit()" type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
